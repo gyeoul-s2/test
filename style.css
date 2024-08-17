@@ -1,0 +1,270 @@
+/* ===== Webサイト全体のスタイル ===== */
+/* html */
+html {
+  height: 100%;
+}
+
+/* body */
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* h1見出し */
+h1 {
+  color: #ffffee;/* フォントの色 */
+  font-size: 90px;/* フォントの大きさ */
+  text-align: center;/* 文字・画像を中央にそろえる */
+  height: 320px;/* 高さ */
+  background-repeat: no-repeat;/* 背景のくり返しをやめる */
+  background-position: top center;/* 背景の位置 */
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header img{
+  text-align: center;
+  width: 100%;
+  padding-top: 0px;/* 上がわの余白 */
+}
+
+
+/* ナビゲーションの箱 */
+nav {
+  background-color: #331e59;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* リスト全体 */
+nav ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* １つ１つのリスト */
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+/* リンク */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Yomogi", sans-serif;
+  font-size: 25px;
+}
+
+/* リンクにふれた時 */
+nav a:hover {
+  color: #ffcc11;
+}
+
+
+/* ===== 紹介のスタイル ===== */
+/* セクション */
+.shop {
+  background-color: #C7F2FE;/* 背景の色 */
+  color: #331E59;
+  padding: 30px;
+}
+
+/* h2見出し */
+.title {
+  font-size: 30px;
+  border-left-style: solid;
+  border-left-width: 10px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+  font-family: "Yomogi", sans-serif;
+}
+
+.info{
+  padding-left: 10px;
+}
+.info h2{
+  font-size: 20px;
+  border-left-style: solid;
+  border-left-width: 5px;
+  padding-left: 10px;
+  font-family: "Yomogi", sans-serif;
+}
+/* 段落 */
+.shop p {
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 30px;
+  height: 300px;
+  color:#663300;
+}
+
+/* 画像 */
+.shop img {
+  float: right;/* 画像や箱の回り込み */
+  height: 100%;
+  border-style: solid;/* 線の種類 */
+  border-color: black;/* 線の色 */
+  border-width: 2px;/* 線の太さ */
+
+}
+
+
+/* ===== 部員の作品スタイル ===== */
+/* セクション */
+.photo {
+  padding: 30px;
+  background-image: url(img/class.blur.jpg);
+  background-repeat: no-repeat;/* 背景のくり返しをやめる */
+  background-position: center;/* 背景の位置 */
+  background-size: cover;
+  background-color: #BEDAFF;
+  background-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+}
+
+/* h2見出し */
+.photo h2 {
+  color: #ffffff;
+  border-color: #ffcc11;
+}
+
+/* h3見出し */
+.photo h3 {
+  color: #663300;
+}
+
+/* 段落 */
+.photo p {
+  color: #ffffff;
+  clear: left;/* 画像や箱の回り込みをやめる */
+}
+
+/* 小さな箱 */
+.projects {
+  background-color: #ffffff;
+  width: 240px;/* 横幅 */
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #000000;/* 影 */
+  float: left;
+  transform: rotate(0deg);/* 回転させる */
+}
+
+.projects img{
+  width: 100%;
+}
+
+/* 箱 */
+.box {
+  float: left;
+}
+
+.projectTitle{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.madeBy{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* ===== Newsのスタイル ===== */
+/* セクション */
+.News {
+  padding: 30px;
+  background-color: white;
+  height: 280px;
+}
+
+/* h2見出し */
+.News h2 {
+  color: #331E59;
+  border-color: #331E59;
+}
+
+/* 表 */
+.News table {
+  background-color: #ffffdd;
+  border-collapse: collapse;/* 表の隙間（すきま） */
+  width: 100%;
+}
+
+/* 表のセル */
+.News td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+/* 表の見出しセル */
+.News th {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: #ffcc11;
+  text-align: left;
+}
+
+.News a{
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  width: 200px;
+  background-color: #33ddcc;
+  border-bottom: 6px solid #2AB4A6;
+  border-radius: 100vh;
+}
+
+.News a:hover{
+  color: #000000;
+  transform: translateY(6px);
+  border-bottom: none;
+}
+
+/* ===== アクセス情報のスタイル ===== */
+/* セクション */
+.access {
+  padding: 30px;
+  background-color: #FFD400;
+  height: 400px;
+  color: #331E59;
+}
+
+/* h3見出し */
+.access h3 {
+  font-size: 50px;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+/* リスト */
+.access ul {
+  list-style-type: none;/* リストのマーカー */
+  padding-left: 0px;
+}
+
+/* 箱 */
+.access div {
+  float: left;
+  width: 50%;
+}
+
+.access iframe{
+ width: 350px;
+ height: 250px;
+}
+/* フッター */
+footer {
+  text-align: center;
+  background-color: #331E59;
+  color: #ffffff;
+}
